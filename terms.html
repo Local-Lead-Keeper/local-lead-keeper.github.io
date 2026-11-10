@@ -11,12 +11,12 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Local Lead Keeper">
 <meta property="og:title" content="Website Terms of Use | Local Lead Keeper">
-<meta property="og:description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for HVAC, plumbing and other home-service businesses across the US.">
+<meta property="og:description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for busy local service businesses across the US: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more.">
 <meta property="og:url" content="https://local-lead-keeper.github.io/terms.html">
 <meta property="og:image" content="https://local-lead-keeper.github.io/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Local Lead Keeper: On a job? Don't lose the next one.">
+<meta property="og:image:alt" content="Local Lead Keeper: Catch every missed call. Look your best on Google.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b1f36">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -35,14 +35,25 @@
       <span class="brand-name">Local Lead <span>Keeper</span></span>
     </a>
     <nav class="nav" id="site-nav" aria-label="Main">
-      <a href="./#how">How it works</a>
+      <a href="./#textback">Text-back</a>
       <a href="./#google">Google listing</a>
       <a href="./#included">What's included</a>
       <a href="./#who">Who it's for</a>
       <a href="./#faq">FAQ</a>
     </nav>
     <div class="header-actions">
-      <a class="btn btn-sm" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper">Book a call</a>
+      <div class="book">
+        <a class="btn btn-sm book-toggle" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper" data-book="book-menu-top">Book a call</a>
+        <div class="book-menu" id="book-menu-top" hidden>
+          <p class="book-title">Email me to book the call:</p>
+          <a class="book-item" href="https://mail.google.com/mail/?view=cm&amp;to=connor.localleadkeeper@gmail.com&amp;su=10-minute%20call%20about%20Local%20Lead%20Keeper" target="_blank" rel="noopener noreferrer">Open in Gmail</a>
+          <a class="book-item" href="https://outlook.live.com/mail/0/deeplink/compose?to=connor.localleadkeeper@gmail.com&amp;subject=10-minute%20call%20about%20Local%20Lead%20Keeper" target="_blank" rel="noopener noreferrer">Open in Outlook</a>
+          <a class="book-item" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper">Use my mail app</a>
+          <button class="book-item book-copy" type="button" data-copy="connor.localleadkeeper@gmail.com">Copy email</button>
+          <span class="book-status" role="status" aria-live="polite"></span>
+          <!-- Future: a "Pick a time" link to a booking page goes here. Not created yet. -->
+        </div>
+      </div>
       <button class="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-open" d="M4 7h16M4 12h16M4 17h16"/><path class="i-close" d="M6 6l12 12M18 6L6 18"/></svg>
       </button>

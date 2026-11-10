@@ -34,12 +34,12 @@
   }
 
   // ----- copy email -----
-  function fallbackCopy(text) {
+  function fallbackCopy(text, host) {
     var ta = document.createElement("textarea");
     ta.value = text;
     ta.setAttribute("readonly", "");
     ta.className = "offscreen";
-    document.body.appendChild(ta);
+    (host || document.body).appendChild(ta); // inside an open menu, so the menu stays open
     ta.select();
     var ok = false;
     try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
@@ -89,5 +89,82 @@
         done(fallbackCopy(text));
       }
     });
+  });
+
+  // ----- Book-a-call menu (round 4) -----
+  // Without JavaScript each button is a plain mailto link. With JavaScript it opens a small menu: Gmail, Outlook,
+  // the computer's mail app, or copy the address. Disclosure pattern: Esc or a click/tap outside closes it.
+  var openMenu = null;
+
+  function closeMenu(focusToggle) {
+    if (!openMenu) return;
+    openMenu.menu.hidden = true;
+    openMenu.toggle.setAttribute("aria-expanded", "false");
+    if (focusToggle) openMenu.toggle.focus();
+    openMenu = null;
+  }
+
+  document.querySelectorAll("[data-book]").forEach(function (toggle) {
+    var menu = document.getElementById(toggle.getAttribute("data-book"));
+    if (!menu) return; // no menu: the plain mailto link keeps working
+    toggle.setAttribute("role", "button");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-controls", menu.id);
+
+    function openIt() {
+      if (openMenu && openMenu.menu !== menu) closeMenu(false);
+      menu.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      openMenu = { menu: menu, toggle: toggle };
+      var first = menu.querySelector(".book-item");
+      if (first) first.focus();
+    }
+
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (openMenu && openMenu.menu === menu) closeMenu(false);
+      else openIt();
+    });
+    toggle.addEventListener("keydown", function (e) {
+      if (e.key === " " || e.key === "Spacebar") {
+        e.preventDefault();
+        toggle.click();
+      }
+    });
+    menu.querySelectorAll("a.book-item").forEach(function (a) {
+      a.addEventListener("click", function () { closeMenu(false); });
+    });
+
+    var copy = menu.querySelector(".book-copy");
+    var status = menu.querySelector(".book-status");
+    if (copy) {
+      var label = copy.textContent;
+      copy.addEventListener("click", function () {
+        var text = copy.getAttribute("data-copy") || "";
+        var show = function (ok) {
+          copy.textContent = ok ? "Copied" : label;
+          if (status) status.textContent = ok ? "Email address copied." : "Could not copy. The address is " + text + ".";
+          setTimeout(function () {
+            copy.textContent = label;
+            if (status) status.textContent = "";
+          }, 2500);
+        };
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(function () { show(true); }, function () { show(fallbackCopy(text, menu)); });
+        } else {
+          show(fallbackCopy(text, menu));
+        }
+      });
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && openMenu) closeMenu(true);
+  });
+  document.addEventListener("click", function (e) {
+    if (openMenu && !openMenu.menu.contains(e.target) && !openMenu.toggle.contains(e.target)) closeMenu(false);
+  });
+  document.addEventListener("focusin", function (e) {
+    if (openMenu && !openMenu.menu.contains(e.target) && !openMenu.toggle.contains(e.target)) closeMenu(false);
   });
 })();

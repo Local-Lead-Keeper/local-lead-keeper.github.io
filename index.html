@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'">
 <meta name="referrer" content="no-referrer">
-<title>Local Lead Keeper | Missed-call text-back and Google listing upkeep for home-service businesses</title>
-<meta name="description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for HVAC, plumbing and other home-service businesses across the US. Based in Virginia.">
+<title>Local Lead Keeper | Missed-call text-back and Google listing upkeep for local service businesses</title>
+<meta name="description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for busy local service businesses across the US: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more. Based in Virginia.">
 <link rel="canonical" href="https://local-lead-keeper.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Local Lead Keeper">
-<meta property="og:title" content="Local Lead Keeper | On a job? Don't lose the next one.">
-<meta property="og:description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for HVAC, plumbing and other home-service businesses across the US.">
+<meta property="og:title" content="Local Lead Keeper | Catch every missed call. Look your best on Google.">
+<meta property="og:description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for busy local service businesses across the US: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more.">
 <meta property="og:url" content="https://local-lead-keeper.github.io/">
 <meta property="og:image" content="https://local-lead-keeper.github.io/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Local Lead Keeper: On a job? Don't lose the next one.">
+<meta property="og:image:alt" content="Local Lead Keeper: Catch every missed call. Look your best on Google.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b1f36">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -32,7 +32,7 @@
   "name": "Local Lead Keeper",
   "url": "https://local-lead-keeper.github.io/",
   "email": "connor.localleadkeeper@gmail.com",
-  "description": "Missed-call text-back plus monthly upkeep of your Google listing and reviews, for HVAC, plumbing and other home-service businesses across the US.",
+  "description": "Missed-call text-back plus monthly upkeep of your Google listing and reviews, for busy local service businesses across the US: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more.",
   "image": "https://local-lead-keeper.github.io/assets/img/og.png",
   "logo": "https://local-lead-keeper.github.io/assets/img/apple-touch-icon.png",
   "founder": {
@@ -61,14 +61,25 @@
       <span class="brand-name">Local Lead <span>Keeper</span></span>
     </a>
     <nav class="nav" id="site-nav" aria-label="Main">
-      <a href="#how">How it works</a>
+      <a href="#textback">Text-back</a>
       <a href="#google">Google listing</a>
       <a href="#included">What's included</a>
       <a href="#who">Who it's for</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="header-actions">
-      <a class="btn btn-sm" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper">Book a call</a>
+      <div class="book">
+        <a class="btn btn-sm book-toggle" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper" data-book="book-menu-top">Book a call</a>
+        <div class="book-menu" id="book-menu-top" hidden>
+          <p class="book-title">Email me to book the call:</p>
+          <a class="book-item" href="https://mail.google.com/mail/?view=cm&amp;to=connor.localleadkeeper@gmail.com&amp;su=10-minute%20call%20about%20Local%20Lead%20Keeper" target="_blank" rel="noopener noreferrer">Open in Gmail</a>
+          <a class="book-item" href="https://outlook.live.com/mail/0/deeplink/compose?to=connor.localleadkeeper@gmail.com&amp;subject=10-minute%20call%20about%20Local%20Lead%20Keeper" target="_blank" rel="noopener noreferrer">Open in Outlook</a>
+          <a class="book-item" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper">Use my mail app</a>
+          <button class="book-item book-copy" type="button" data-copy="connor.localleadkeeper@gmail.com">Copy email</button>
+          <span class="book-status" role="status" aria-live="polite"></span>
+          <!-- Future: a "Pick a time" link to a booking page goes here. Not created yet. -->
+        </div>
+      </div>
       <button class="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-open" d="M4 7h16M4 12h16M4 17h16"/><path class="i-close" d="M6 6l12 12M18 6L6 18"/></svg>
       </button>
@@ -81,11 +92,34 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">For HVAC, plumbing and other <span class="nowrap">home-service</span> businesses</p>
-      <h1>On a job? Don't lose the next one.</h1>
-      <p class="lead">When you can't pick up, your caller can get a quick text from your business, and your Google listing keeps you looking sharp, so customers pick you, not the next company on the list.</p>
+      <p class="eyebrow">For busy local service businesses: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more</p>
+      <h1>Catch every missed call. Look your best on Google.</h1>
+      <p class="lead">The text catches the caller you missed. The Google listing makes them pick you in the first place.</p>
+      <div class="halves">
+        <a class="half" href="#textback">
+          <span class="half-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></span>
+          <span class="half-name">Missed-call text-back</span>
+          <span class="half-line">Can't pick up? Your caller can get a text from your business.</span>
+        </a>
+        <a class="half" href="#google">
+          <span class="half-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span class="half-name">Google listing &amp; reviews</span>
+          <span class="half-line">Hours, posts and review replies kept current every month.</span>
+        </a>
+      </div>
       <div class="cta-row">
-        <a class="btn" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper">Book a free 10-minute call</a>
+        <div class="book">
+        <a class="btn book-toggle" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper" data-book="book-menu-hero">Book a free 10-minute call</a>
+        <div class="book-menu" id="book-menu-hero" hidden>
+          <p class="book-title">Email me to book the call:</p>
+          <a class="book-item" href="https://mail.google.com/mail/?view=cm&amp;to=connor.localleadkeeper@gmail.com&amp;su=10-minute%20call%20about%20Local%20Lead%20Keeper" target="_blank" rel="noopener noreferrer">Open in Gmail</a>
+          <a class="book-item" href="https://outlook.live.com/mail/0/deeplink/compose?to=connor.localleadkeeper@gmail.com&amp;subject=10-minute%20call%20about%20Local%20Lead%20Keeper" target="_blank" rel="noopener noreferrer">Open in Outlook</a>
+          <a class="book-item" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper">Use my mail app</a>
+          <button class="book-item book-copy" type="button" data-copy="connor.localleadkeeper@gmail.com">Copy email</button>
+          <span class="book-status" role="status" aria-live="polite"></span>
+          <!-- Future: a "Pick a time" link to a booking page goes here. Not created yet. -->
+        </div>
+      </div>
         <!-- phone button, off for now: <a class="btn btn-ghost" href="tel:+1NUMBER">Call or text NUMBER</a> -->
       </div>
       <div class="email-box">
@@ -94,14 +128,10 @@
         <button class="copy-btn" type="button" data-copy="connor.localleadkeeper@gmail.com" hidden>Copy email</button>
         <span class="copy-status" role="status" aria-live="polite"></span>
       </div>
-      <ul class="hero-points">
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Keep your phone number</li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Month to month</li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Anywhere in the US</li>
-      </ul>
     </div>
 
-    <figure class="phone-fig">
+    <div class="hero-mocks">
+      <figure class="phone-fig">
       <span class="example-tag">Example text</span>
       <div class="phone" role="img" aria-label="Example: a caller's phone shows a text from Your Company that says: Sorry we missed you, this is Your Company. How can we help? Reply STOP to opt out. The caller replies: Hi, can someone come out this week? Need a quote.">
         <div class="phone-screen" aria-hidden="true">
@@ -119,15 +149,47 @@
           <div class="phone-input"><span>Text message</span><i></i></div>
         </div>
       </div>
-      <figcaption>What a caller sees after pressing&nbsp;1. Their reply comes straight to your phone.</figcaption>
+      <figcaption>A missed caller presses&nbsp;1 and gets this text from your business.</figcaption>
     </figure>
+      <figure class="listing-fig">
+      <span class="example-tag">Example listing</span>
+      <div class="listing" role="img" aria-label="Example of a Google listing for Your Company, a local business rated 4.9 stars, open until 6 PM with holiday hours updated. Latest post: now booking for next week. A five-star review from Jordan M. says: Came out the same day, explained everything and cleaned up after. Friendly and on time. The owner replied: Thanks, Jordan! We appreciate you choosing us.">
+        <div class="listing-in" aria-hidden="true">
+          <div class="l-head">
+            <span class="avatar">YC</span>
+            <div>
+              <p class="l-name">Your Company</p>
+              <p class="l-cat">Local business</p>
+            </div>
+          </div>
+          <p class="l-rating"><span class="l-score">4.9</span><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg></span></p>
+          <p class="l-hours"><span class="l-open">Open</span> &middot; Closes 6 PM &middot; Holiday hours updated</p>
+          <div class="l-actions"><span>Call</span><span>Directions</span><span>Website</span></div>
+          <div class="l-post">
+            <p class="l-label">Latest post &middot; 3 days ago</p>
+            <p>Now booking for next week. Call or message us for a quote.</p>
+          </div>
+          <div class="l-review">
+            <p class="l-who"><span class="avatar sm">JM</span><span>Jordan M.</span><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg></span><span class="l-when">2 days ago</span></p>
+            <p>"Came out the same day, explained everything and cleaned up after. Friendly and on time."</p>
+            <div class="l-reply">
+              <p class="l-label">Response from the owner</p>
+              <p>Thanks, Jordan! We appreciate you choosing us.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>Your Google listing: hours, posts and review replies kept current.</figcaption>
+    </figure>
+    </div>
   </div>
 </section>
 
-<section class="section" id="problem">
+<section class="section soft half-sec" id="textback">
   <div class="wrap narrow">
-    <h2>A missed call is often a missed job.</h2>
-    <p class="section-lead">Many people who reach voicemail don't leave a message. They call the next company.</p>
+    <p class="half-tag">Half 1 of 2</p>
+    <h2>Missed-call text-back</h2>
+    <p class="section-lead">Many people who reach voicemail don't leave a message. They call the next company. With the text-back, a caller you can't answer can ask for a text from your business, and you get the details on your phone.</p>
   </div>
   <div class="wrap">
     <div class="grid-3">
@@ -137,22 +199,15 @@
       </div>
       <div class="tile">
         <h3>It's after hours</h3>
-        <p>Calls come in at dinner time and on weekends, when nobody is at the desk.</p>
+        <p>Calls come in at dinner time and on weekends. The caller can still press 1: their text goes out automatically when texting hours start the next morning, and you get the missed-call alert right away.</p>
+        <p class="tile-note">Texting hours: 8 AM to 9 PM in Virginia and New York; other states follow their own rules.</p>
       </div>
       <div class="tile">
         <h3>You're on another call</h3>
         <p>The second caller hears ringing, hangs up and tries someone else.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="section soft" id="how">
-  <div class="wrap narrow">
-    <h2>How it works</h2>
-    <p class="section-lead">Three simple steps. I set it up, you keep working.</p>
-  </div>
-  <div class="wrap">
+    <h3 class="sub-h">How it works</h3>
     <ol class="steps">
       <li class="step">
         <span class="step-num" aria-hidden="true">1</span>
@@ -176,46 +231,17 @@
   </div>
 </section>
 
-<section class="section" id="google">
+<section class="section half-sec" id="google">
   <div class="wrap g-grid">
     <div class="g-copy">
-      <p class="eyebrow">The other half of the service</p>
-      <h2>Your Google listing and your reviews, looked after every month.</h2>
-      <p class="section-lead">Your Google listing is the box with your hours, photos and reviews that people see on Google Search and Maps. Google calls it your "Google Business Profile".</p>
+      <p class="half-tag">Half 2 of 2</p>
+      <h2>Google listing &amp; reviews</h2>
+      <p class="section-lead">Your Google listing and your reviews, looked after every month. Your Google listing is the box with your hours, photos and reviews that people see on Google Search and Maps. Google calls it your "Google Business Profile".</p>
       <h3 class="g-h">Why it matters</h3>
       <p>When customers need a pro fast, they search Google and call one of the first few companies they see. A listing with current hours, real photos, recent posts and replies to reviews looks active and trustworthy.</p>
     </div>
 
-    <figure class="listing-fig">
-      <span class="example-tag">Example listing</span>
-      <div class="listing" role="img" aria-label="Example of a Google listing for Your Company, a home-service business rated 4.9 stars, open until 6 PM with holiday hours updated. Latest post: now booking for next week. A five-star review from Jordan M. says: Came out the same day, explained everything and cleaned up after. Friendly and on time. The owner replied: Thanks, Jordan! We appreciate you choosing us.">
-        <div class="listing-in" aria-hidden="true">
-          <div class="l-head">
-            <span class="avatar">YC</span>
-            <div>
-              <p class="l-name">Your Company</p>
-              <p class="l-cat">Home services</p>
-            </div>
-          </div>
-          <p class="l-rating"><span class="l-score">4.9</span><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg></span></p>
-          <p class="l-hours"><span class="l-open">Open</span> &middot; Closes 6 PM &middot; Holiday hours updated</p>
-          <div class="l-actions"><span>Call</span><span>Directions</span><span>Website</span></div>
-          <div class="l-post">
-            <p class="l-label">Latest post &middot; 3 days ago</p>
-            <p>Now booking for next week. Call or message us for a quote.</p>
-          </div>
-          <div class="l-review">
-            <p class="l-who"><span class="avatar sm">JM</span><span>Jordan M.</span><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg></span><span class="l-when">2 days ago</span></p>
-            <p>"Came out the same day, explained everything and cleaned up after. Friendly and on time."</p>
-            <div class="l-reply">
-              <p class="l-label">Response from the owner</p>
-              <p>Thanks, Jordan! We appreciate you choosing us.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <figcaption>Hours, posts and review replies kept current. Replies to bad reviews always wait for your OK.</figcaption>
-    </figure>
+    
     <div class="g-lists">
         <div>
           <h3 class="g-h">What I do every month</h3>
@@ -285,7 +311,7 @@
   <div class="wrap who-grid">
     <div>
       <h2>Who it's for</h2>
-      <p class="section-lead">Owner-run HVAC, plumbing and other <span class="nowrap">home-service</span> businesses, wherever you are in the US.</p>
+      <p class="section-lead">Owner-run local service businesses: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more, wherever you are in the US.</p>
       <p>If you're often on a job when the phone rings, and you'd rather spend your evenings on something other than your Google listing, this is built for you.</p>
       <div class="person">
         <h3>Who you'll work with</h3>
@@ -352,7 +378,18 @@
     <h2>See if it fits your business.</h2>
     <p>A free 10-minute call. You tell me how you handle calls today, and you decide if it's worth it.</p>
     <div class="cta-row center">
-      <a class="btn" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper">Book a free 10-minute call</a>
+      <div class="book">
+        <a class="btn book-toggle" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper" data-book="book-menu-bottom">Book a free 10-minute call</a>
+        <div class="book-menu" id="book-menu-bottom" hidden>
+          <p class="book-title">Email me to book the call:</p>
+          <a class="book-item" href="https://mail.google.com/mail/?view=cm&amp;to=connor.localleadkeeper@gmail.com&amp;su=10-minute%20call%20about%20Local%20Lead%20Keeper" target="_blank" rel="noopener noreferrer">Open in Gmail</a>
+          <a class="book-item" href="https://outlook.live.com/mail/0/deeplink/compose?to=connor.localleadkeeper@gmail.com&amp;subject=10-minute%20call%20about%20Local%20Lead%20Keeper" target="_blank" rel="noopener noreferrer">Open in Outlook</a>
+          <a class="book-item" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper">Use my mail app</a>
+          <button class="book-item book-copy" type="button" data-copy="connor.localleadkeeper@gmail.com">Copy email</button>
+          <span class="book-status" role="status" aria-live="polite"></span>
+          <!-- Future: a "Pick a time" link to a booking page goes here. Not created yet. -->
+        </div>
+      </div>
       <!-- phone button, off for now: <a class="btn btn-ghost light" href="tel:+1NUMBER">Call or text NUMBER</a> -->
     </div>
     <div class="email-box light">
