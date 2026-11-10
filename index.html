@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'">
 <meta name="referrer" content="no-referrer">
-<title>Local Lead Keeper | Missed-call text-back for HVAC and plumbing companies</title>
-<meta name="description" content="When you can't pick up, your caller can get a quick text from your business, and your Google listing stays up to date. For HVAC and plumbing companies in Hampton Roads, Virginia.">
+<title>Local Lead Keeper | Missed-call text-back and Google listing upkeep for home-service businesses</title>
+<meta name="description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for HVAC, plumbing and other home-service businesses across the US. Based in Virginia.">
 <link rel="canonical" href="https://local-lead-keeper.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Local Lead Keeper">
-<meta property="og:title" content="Local Lead Keeper | Stop losing jobs to missed calls">
-<meta property="og:description" content="Missed-call text-back and Google listing upkeep for HVAC and plumbing companies in Hampton Roads, Virginia.">
+<meta property="og:title" content="Local Lead Keeper | On a job? Don't lose the next one.">
+<meta property="og:description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for HVAC, plumbing and other home-service businesses across the US.">
 <meta property="og:url" content="https://local-lead-keeper.github.io/">
 <meta property="og:image" content="https://local-lead-keeper.github.io/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Local Lead Keeper: stop losing jobs to missed calls">
+<meta property="og:image:alt" content="Local Lead Keeper: On a job? Don't lose the next one.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b1f36">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -24,7 +24,32 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/site.css">
-<script src="assets/js/menu.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Local Lead Keeper",
+  "url": "https://local-lead-keeper.github.io/",
+  "email": "connor.localleadkeeper@gmail.com",
+  "description": "Missed-call text-back plus monthly upkeep of your Google listing and reviews, for HVAC, plumbing and other home-service businesses across the US.",
+  "image": "https://local-lead-keeper.github.io/assets/img/og.png",
+  "logo": "https://local-lead-keeper.github.io/assets/img/apple-touch-icon.png",
+  "founder": {
+    "@type": "Person",
+    "name": "Connor Haas"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "VA",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  }
+}
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -37,6 +62,7 @@
     </a>
     <nav class="nav" id="site-nav" aria-label="Main">
       <a href="#how">How it works</a>
+      <a href="#google">Google listing</a>
       <a href="#included">What's included</a>
       <a href="#who">Who it's for</a>
       <a href="#faq">FAQ</a>
@@ -55,23 +81,29 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">For HVAC and plumbing companies in Hampton Roads</p>
-      <h1>Stop losing jobs to missed calls.</h1>
-      <p class="lead">When you can't pick up, your caller can get a quick text from your business, so they don't call the next company on the list.</p>
+      <p class="eyebrow">For HVAC, plumbing and other <span class="nowrap">home-service</span> businesses</p>
+      <h1>On a job? Don't lose the next one.</h1>
+      <p class="lead">When you can't pick up, your caller can get a quick text from your business, and your Google listing keeps you looking sharp, so customers pick you, not the next company on the list.</p>
       <div class="cta-row">
         <a class="btn" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper">Book a free 10-minute call</a>
-        <a class="email-link" href="mailto:connor.localleadkeeper@gmail.com">or email connor.localleadkeeper@gmail.com</a>
+        <!-- phone button, off for now: <a class="btn btn-ghost" href="tel:+1NUMBER">Call or text NUMBER</a> -->
+      </div>
+      <div class="email-box">
+        <span class="email-label">Or email me directly:</span>
+        <a class="email-addr" href="mailto:connor.localleadkeeper@gmail.com">connor.localleadkeeper@gmail.com</a>
+        <button class="copy-btn" type="button" data-copy="connor.localleadkeeper@gmail.com" hidden>Copy email</button>
+        <span class="copy-status" role="status" aria-live="polite"></span>
       </div>
       <ul class="hero-points">
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Keep your phone number</li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Month to month</li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Based in Norfolk</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Anywhere in the US</li>
       </ul>
     </div>
 
     <figure class="phone-fig">
       <span class="example-tag">Example text</span>
-      <div class="phone" role="img" aria-label="Example: a caller's phone shows a text from Your Company that says: Sorry we missed you, this is Your Company. How can we help? Reply STOP to opt out. The caller replies: Our AC stopped blowing cold. Can someone come out tomorrow?">
+      <div class="phone" role="img" aria-label="Example: a caller's phone shows a text from Your Company that says: Sorry we missed you, this is Your Company. How can we help? Reply STOP to opt out. The caller replies: Hi, can someone come out this week? Need a quote.">
         <div class="phone-screen" aria-hidden="true">
           <div class="phone-notch"></div>
           <div class="phone-top">
@@ -79,9 +111,9 @@
             <span class="contact">Your Company</span>
           </div>
           <div class="phone-msgs">
-            <p class="meta">Missed call &middot; 2:14 PM</p>
+            <p class="meta">Today 2:14 PM</p>
             <p class="bubble in">Sorry we missed you, this is Your Company. How can we help? Reply STOP to opt out.</p>
-            <p class="bubble out">Our AC stopped blowing cold. Can someone come out tomorrow?</p>
+            <p class="bubble out">Hi, can someone come out this week? Need a quote.</p>
             <p class="meta right">Delivered</p>
           </div>
           <div class="phone-input"><span>Text message</span><i></i></div>
@@ -95,13 +127,13 @@
 <section class="section" id="problem">
   <div class="wrap narrow">
     <h2>A missed call is often a missed job.</h2>
-    <p class="section-lead">When the AC quits or a pipe bursts, many people don't wait for a call back. They call the next company.</p>
+    <p class="section-lead">Many people who reach voicemail don't leave a message. They call the next company.</p>
   </div>
   <div class="wrap">
     <div class="grid-3">
       <div class="tile">
         <h3>You're on a job</h3>
-        <p>You're under a sink or up in an attic. The phone rings and you can't get to it.</p>
+        <p>Your hands are full and the phone keeps ringing.</p>
       </div>
       <div class="tile">
         <h3>It's after hours</h3>
@@ -144,10 +176,73 @@
   </div>
 </section>
 
-<section class="section" id="included">
+<section class="section" id="google">
+  <div class="wrap g-grid">
+    <div class="g-copy">
+      <p class="eyebrow">The other half of the service</p>
+      <h2>Your Google listing and your reviews, looked after every month.</h2>
+      <p class="section-lead">Your Google listing is the box with your hours, photos and reviews that people see on Google Search and Maps. Google calls it your "Google Business Profile".</p>
+      <h3 class="g-h">Why it matters</h3>
+      <p>When customers need a pro fast, they search Google and call one of the first few companies they see. A listing with current hours, real photos, recent posts and replies to reviews looks active and trustworthy.</p>
+    </div>
+
+    <figure class="listing-fig">
+      <span class="example-tag">Example listing</span>
+      <div class="listing" role="img" aria-label="Example of a Google listing for Your Company, a home-service business rated 4.9 stars, open until 6 PM with holiday hours updated. Latest post: now booking for next week. A five-star review from Jordan M. says: Came out the same day, explained everything and cleaned up after. Friendly and on time. The owner replied: Thanks, Jordan! We appreciate you choosing us.">
+        <div class="listing-in" aria-hidden="true">
+          <div class="l-head">
+            <span class="avatar">YC</span>
+            <div>
+              <p class="l-name">Your Company</p>
+              <p class="l-cat">Home services</p>
+            </div>
+          </div>
+          <p class="l-rating"><span class="l-score">4.9</span><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg></span></p>
+          <p class="l-hours"><span class="l-open">Open</span> &middot; Closes 6 PM &middot; Holiday hours updated</p>
+          <div class="l-actions"><span>Call</span><span>Directions</span><span>Website</span></div>
+          <div class="l-post">
+            <p class="l-label">Latest post &middot; 3 days ago</p>
+            <p>Now booking for next week. Call or message us for a quote.</p>
+          </div>
+          <div class="l-review">
+            <p class="l-who"><span class="avatar sm">JM</span><span>Jordan M.</span><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.4 7 .7-5.3 4.7 1.6 6.9L12 17.6l-6.2 3.6 1.6-6.9L2.1 9.6l7-.7z"/></svg></span><span class="l-when">2 days ago</span></p>
+            <p>"Came out the same day, explained everything and cleaned up after. Friendly and on time."</p>
+            <div class="l-reply">
+              <p class="l-label">Response from the owner</p>
+              <p>Thanks, Jordan! We appreciate you choosing us.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>Hours, posts and review replies kept current. Replies to bad reviews always wait for your OK.</figcaption>
+    </figure>
+    <div class="g-lists">
+        <div>
+          <h3 class="g-h">What I do every month</h3>
+          <ul class="ticks">
+            <li>Keep your hours (including holidays), services and photos current</li>
+            <li>About 4 short posts a month: seasonal tips, offers, holiday hours. You approve them first</li>
+            <li>Draft a polite reply to every new review. Replies to bad reviews wait for your OK before they go up</li>
+            <li>Check that your phone number, website and service area are still right</li>
+          </ul>
+          <p class="your-part"><strong>Your part:</strong> say yes (or ask for changes) to the posts and to any reply to a bad review. That's it.</p>
+        </div>
+        <div>
+          <h3 class="g-h">What I never do</h3>
+          <ul class="crosses">
+            <li>Fake, bought or swapped reviews</li>
+            <li>Write reviews for you or your customers</li>
+            <li>Promise you a higher ranking</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="included">
   <div class="wrap narrow">
     <h2>What's included</h2>
-    <p class="section-lead">One simple monthly service, run for you.</p>
+    <p class="section-lead">Two halves, one simple monthly service, run for you.</p>
   </div>
   <div class="wrap">
     <div class="grid-3">
@@ -156,20 +251,21 @@
         <h3>Missed-call text-back</h3>
         <ul class="ticks">
           <li>One polite text to callers who ask for it</li>
-          <li>Sent 8 am to 9 pm only</li>
+          <li>Daytime only: 8 am to 9 pm your time, at most</li>
           <li>No ads, ever. STOP always works</li>
           <li>Replies go to your phone</li>
         </ul>
       </div>
       <div class="card">
         <span class="icon icon-accent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-        <h3>Google Business Profile upkeep</h3>
+        <h3>Your Google listing and reviews</h3>
         <ul class="ticks">
-          <li>Hours, services and photos kept current</li>
+          <li>Hours (including holidays), services and photos kept current</li>
           <li>About four short posts a month, approved by you</li>
-          <li>A reply drafted for every new review</li>
+          <li>A polite reply drafted for every new review</li>
           <li>No fake reviews, ever</li>
         </ul>
+        <a class="card-link" href="#google">More about the Google work</a>
       </div>
       <div class="card">
         <span class="icon icon-accent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span>
@@ -185,53 +281,63 @@
   </div>
 </section>
 
-<section class="section soft" id="who">
+<section class="section" id="who">
   <div class="wrap who-grid">
     <div>
       <h2>Who it's for</h2>
-      <p class="section-lead">Owner-run heating, cooling and plumbing companies in Hampton Roads, Virginia.</p>
+      <p class="section-lead">Owner-run HVAC, plumbing and other <span class="nowrap">home-service</span> businesses, wherever you are in the US.</p>
       <p>If you're often on a job when the phone rings, and you'd rather spend your evenings on something other than your Google listing, this is built for you.</p>
       <div class="person">
         <h3>Who you'll work with</h3>
-        <p>I'm Connor Haas, and I live in Norfolk. Local Lead Keeper is my own small business: I set everything up myself, and you reach me directly. It's new, and I'm starting with just a few local companies so each one gets my full attention.</p>
+        <p>I'm Connor Haas. Local Lead Keeper is my own small business: I set everything up myself, and you reach me directly. It's brand new, and I'm taking on only a few companies at first so each one gets my full attention.</p>
       </div>
     </div>
     <div class="who-card">
-      <p class="who-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Serving Hampton Roads</p>
-      <ul class="towns">
-        <li>Norfolk</li><li>Virginia Beach</li><li>Chesapeake</li><li>Portsmouth</li><li>Suffolk</li><li>Hampton</li><li>Newport News</li>
+      <p class="who-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Anywhere in the US</p>
+      <p class="who-text">Based in Virginia. I can set up companies anywhere in the US, all remotely, by phone and email.</p>
+      <ul class="ticks">
+        <li>Texting hours set to fit your state's rules</li>
+        <li>You deal with me directly</li>
+        <li>Month to month</li>
       </ul>
-      <p class="who-note">Based in Norfolk. Happy to meet in person.</p>
     </div>
   </div>
 </section>
 
-<section class="section" id="faq">
+<section class="section soft" id="faq">
   <div class="wrap faq-grid">
     <div class="faq-head">
-      <h2>Questions owners ask</h2>
+      <h2>Common questions</h2>
       <p class="section-lead">Something else on your mind? Just ask on the call.</p>
     </div>
     <div class="faq">
       <details>
         <summary>How long does setup take?</summary>
-        <p>My setup work takes a few days. Then the phone carriers need about 1 to 2 weeks to approve business texting in your company's name. That approval is required for business texting in the US, and I help you with the paperwork. Your Google profile work can start right away.</p>
+        <p>My setup work takes a few days. Then the phone carriers need about 1 to 2 weeks (sometimes longer, and I keep you posted) to approve business texting in your company's name. That approval is required for business texting in the US, and I help you with the paperwork. Your Google profile work can start right away.</p>
       </details>
       <details>
         <summary>Is there a long contract?</summary>
-        <p>No. It's one flat monthly fee, month to month, under a short written agreement. You can cancel any time with 30 days' notice. Your Google profile, your phone number and your texting account stay yours: if you leave, you just remove my access. I'll tell you the exact price on our call, and in writing before you sign anything.</p>
+        <p>No. There's a one-time setup fee, then one flat monthly fee, month to month, under a short written agreement. You can cancel any time with 30 days' notice. Your Google profile, your phone number and your texting account stay yours: if you leave, you just remove my access. I'll tell you the exact prices on our call, and in writing before you sign anything.</p>
+      </details>
+      <details>
+        <summary>Do I have to give you my Google password?</summary>
+        <p>No. You add me as a Manager on your Google Business Profile, and you can remove me any time. You stay the owner of your listing.</p>
       </details>
       <details>
         <summary>Do I need to be good with technology?</summary>
-        <p>No. I set it up and run it for you. You'll change one call-forwarding setting on your phone, and I'll walk you through it step by step.</p>
+        <p>No. I set it up and run it for you. You'll turn on forwarding for calls you don't answer, either on your phone or through your phone company or phone system, and I'll walk you through it step by step.</p>
       </details>
       <details>
         <summary>What do my customers see?</summary>
-        <p>If you can't answer, the caller hears a short greeting in your business name that asks them to press 1 if they'd like a text. If they press 1, they get one text, for example: "Sorry we missed you, this is [your company]. How can we help? Reply STOP to opt out." They can still leave a voicemail as usual.</p>
+        <p>If you can't answer, the caller hears a short greeting in your business name that asks them to press 1 if they'd like a text. If they press 1, they get one text, for example: "Sorry we missed you, this is [your company]. How can we help? Reply STOP to opt out." If they call late in the evening, the text goes out the next morning when texting hours start. They can always leave a voicemail as usual.</p>
       </details>
       <details>
         <summary>What about STOP and privacy?</summary>
-        <p>Texts only go to people who called you and asked for one. Never marketing, only 8 am to 9 pm, and at most one text per caller per day. Anyone who replies STOP gets one confirmation and no more texts. Callers' numbers are never sold or shared for marketing.</p>
+        <p>Texts only go to people who called you and asked for one. Never marketing, only during the day (8 am to 9 pm in your time zone at most, narrower where your state requires), and at most one text per caller per day. Anyone who replies STOP gets one confirmation and no more texts. Callers' numbers are never sold or shared for marketing.</p>
+      </details>
+      <details>
+        <summary>I'm not in Virginia. Can you still help?</summary>
+        <p>Yes. Everything is set up remotely, by phone and email. Some states have stricter texting rules than federal law, so before we start I check your state's rules and adjust the setup if needed.</p>
       </details>
       <details>
         <summary>Can you promise me more jobs?</summary>
@@ -247,8 +353,14 @@
     <p>A free 10-minute call. You tell me how you handle calls today, and you decide if it's worth it.</p>
     <div class="cta-row center">
       <a class="btn" href="mailto:connor.localleadkeeper@gmail.com?subject=10-minute%20call%20about%20Local%20Lead%20Keeper">Book a free 10-minute call</a>
-      <a class="email-link light" href="mailto:connor.localleadkeeper@gmail.com">or email connor.localleadkeeper@gmail.com</a>
+      <!-- phone button, off for now: <a class="btn btn-ghost light" href="tel:+1NUMBER">Call or text NUMBER</a> -->
     </div>
+    <div class="email-box light">
+        <span class="email-label">Or email me directly:</span>
+        <a class="email-addr" href="mailto:connor.localleadkeeper@gmail.com">connor.localleadkeeper@gmail.com</a>
+        <button class="copy-btn" type="button" data-copy="connor.localleadkeeper@gmail.com" hidden>Copy email</button>
+        <span class="copy-status" role="status" aria-live="polite"></span>
+      </div>
   </div>
 </section>
 
@@ -258,7 +370,7 @@
   <div class="wrap footer-row">
     <div>
       <p class="footer-brand">Local Lead Keeper</p>
-      <p>Operated by Connor Haas, Norfolk, Virginia.</p>
+      <p>Operated by Connor Haas, Virginia.</p>
     </div>
     <nav class="footer-links" aria-label="Footer">
       <a href="privacy.html">Privacy</a>

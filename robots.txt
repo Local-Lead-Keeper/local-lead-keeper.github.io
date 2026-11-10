@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://local-lead-keeper.github.io/sitemap.xml
