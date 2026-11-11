@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'">
 <meta name="referrer" content="no-referrer">
-<title>Local Lead Keeper | Missed-call text-back and Google listing upkeep for local service businesses</title>
-<meta name="description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for busy local service businesses across the US: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more. Based in Virginia.">
+<title>Local Lead Keeper | Missed-call text-back and Google listing upkeep for local businesses</title>
+<meta name="description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for owner-run local businesses across the US. Based in Virginia.">
 <link rel="canonical" href="https://local-lead-keeper.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Local Lead Keeper">
 <meta property="og:title" content="Local Lead Keeper | Catch every missed call. Look your best on Google.">
-<meta property="og:description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for busy local service businesses across the US: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more.">
+<meta property="og:description" content="Missed-call text-back plus monthly upkeep of your Google listing and reviews, for owner-run local businesses across the US.">
 <meta property="og:url" content="https://local-lead-keeper.github.io/">
 <meta property="og:image" content="https://local-lead-keeper.github.io/assets/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -25,6 +25,7 @@
 <link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/site.css">
 <script src="assets/js/site.js" defer></script>
+<script src="assets/js/demos.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -32,7 +33,7 @@
   "name": "Local Lead Keeper",
   "url": "https://local-lead-keeper.github.io/",
   "email": "connor.localleadkeeper@gmail.com",
-  "description": "Missed-call text-back plus monthly upkeep of your Google listing and reviews, for busy local service businesses across the US: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more.",
+  "description": "Missed-call text-back plus monthly upkeep of your Google listing and reviews, for owner-run local businesses across the US.",
   "image": "https://local-lead-keeper.github.io/assets/img/og.png",
   "logo": "https://local-lead-keeper.github.io/assets/img/apple-touch-icon.png",
   "founder": {
@@ -61,6 +62,7 @@
       <span class="brand-name">Local Lead <span>Keeper</span></span>
     </a>
     <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="#see-it-work">See it work</a>
       <a href="#textback">Text-back</a>
       <a href="#google">Google listing</a>
       <a href="#included">What's included</a>
@@ -92,7 +94,7 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">For busy local service businesses: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more</p>
+      <p class="eyebrow">For local businesses that live on their phone</p>
       <h1>Catch every missed call. Look your best on Google.</h1>
       <p class="lead">The text catches the caller you missed. The Google listing makes them pick you in the first place.</p>
       <div class="halves">
@@ -181,6 +183,238 @@
       </div>
       <figcaption>Your Google listing: hours, posts and review replies kept current.</figcaption>
     </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section soft demos" id="see-it-work" aria-labelledby="demos-h">
+  <div class="wrap">
+    <div class="narrow-head">
+      <p class="half-tag">See it work</p>
+      <h2 id="demos-h">See it work</h2>
+      <p class="section-lead">Three short examples, each with a made-up business. Nothing here is a real client, customer or review.</p>
+    </div>
+    <div class="demo-tabs" role="tablist" aria-label="Pick an example">
+      <button class="demo-tab" type="button" role="tab" id="tab-a" aria-controls="demo-a" aria-selected="true">Text-back</button>
+      <button class="demo-tab" type="button" role="tab" id="tab-b" aria-controls="demo-b" aria-selected="false" tabindex="-1">Google listing</button>
+      <button class="demo-tab" type="button" role="tab" id="tab-c" aria-controls="demo-c" aria-selected="false" tabindex="-1">Monthly report</button>
+    </div>
+
+    <!-- A: missed-call text-back -->
+    <div class="demo" id="demo-a" role="tabpanel" aria-labelledby="tab-a" data-demo>
+      <header class="demo-head">
+        <span class="example-tag">Example</span>
+        <h3>Missed-call text-back</h3>
+        <p class="demo-biz">Example: Bright Cuts Salon (a made-up business)</p>
+      </header>
+      <div class="demo-body">
+        <div class="demo-side">
+          <div class="variants" role="group" aria-label="Which call to watch">
+            <button class="variant" type="button" data-variant="day" aria-pressed="true">Daytime call</button>
+            <button class="variant" type="button" data-variant="night" aria-pressed="false">After-hours call</button>
+          </div>
+          <p class="demo-cap" role="status" aria-live="polite" data-intro="Press Play to watch a missed call turn into a text."></p>
+          <div class="demo-controls">
+            <button class="dbtn dbtn-play" type="button">Play</button>
+            <button class="dbtn dbtn-pause" type="button" disabled>Pause</button>
+          </div>
+          <ol class="demo-steps" data-for="day">
+            <li data-ms="2600">A customer calls Bright Cuts Salon (an example). Everyone is busy, so the phone rings.</li>
+            <li data-ms="2200">Nobody answers. The call rolls over to the texting line.</li>
+            <li data-ms="4800">The caller hears a short greeting that asks them to press 1 if they would like a text.</li>
+            <li data-ms="2200">The caller presses 1.</li>
+            <li data-ms="3200">One text goes out from the business, right away, in the business name.</li>
+            <li data-ms="3000">The owner gets a missed-call alert on their phone.</li>
+            <li data-ms="2800">The customer replies with what they need.</li>
+            <li data-ms="3600">The reply goes to the owner's phone too. The owner calls or texts back when free. STOP always works.</li>
+          </ol>
+          <ol class="demo-steps" data-for="night" hidden>
+            <li data-ms="2600">It is 10:32 PM and the salon is closed. A customer calls anyway.</li>
+            <li data-ms="2200">Nobody answers. The call rolls over to the texting line.</li>
+            <li data-ms="5000">The greeting says the text will come after 8 AM, when texting hours start, and asks the caller to press 1.</li>
+            <li data-ms="3000">The caller presses 1 and hears: "We will text you at this number after 8 AM."</li>
+            <li data-ms="3200">The owner gets the missed-call alert right away. The text is waiting for 8:00 AM.</li>
+            <li data-ms="3200">Next morning at 8:00 AM, texting hours start and the one text goes out. No late-night text.</li>
+            <li data-ms="2800">The customer replies.</li>
+            <li data-ms="3600">The reply goes to the owner's phone. STOP always works.</li>
+          </ol>
+        </div>
+        <div class="stage" aria-hidden="true">
+          <div class="scene" data-scene="day">
+            <div class="tb">
+              <div class="mini-phone">
+                <p class="mp-label">The caller's phone</p>
+                <div class="mp-screen">
+                  <div class="pane pane-call" data-until="5">
+                    <p class="call-who">Bright Cuts Salon</p>
+                    <div class="call-state">
+                      <p class="call-line ringing" data-at="1" data-until="2">Ringing...</p>
+                      <p class="call-line" data-at="2" data-until="3">No answer</p>
+                      <p class="call-line" data-at="3">Recorded greeting</p>
+                    </div>
+                    <p class="greet" data-at="3">Thanks for calling Bright Cuts Salon. Sorry we missed your call. To get one text from us at this number about your call, press 1 now. Message and data rates may apply. You can reply STOP to opt out or HELP for help. Or stay on the line to leave a message.</p>
+                    <p class="keypress" data-at="4"><span>1</span> The caller presses 1</p>
+                  </div>
+                  <div class="pane pane-thread" data-at="5">
+                    <p class="meta">Today 2:14 PM</p>
+                    <p class="bubble in">Sorry we missed you, this is Bright Cuts Salon. How can we help? Reply STOP to opt out.</p>
+                    <p class="bubble out" data-at="7">Hi, do you have any openings Saturday morning?</p>
+                    <p class="meta right" data-at="7">Delivered</p>
+                  </div>
+                </div>
+              </div>
+              <div class="owner">
+                <p class="mp-label">The owner's phone</p>
+                <div class="alert" data-at="6"><p class="alert-t">Text message</p><p>Bright Cuts Salon: missed call from (757) 555-0123 at 2:14 PM. Voicemail: none. We texted them.</p></div>
+                <div class="alert" data-at="8"><p class="alert-t">Text message</p><p>Bright Cuts Salon: text from (757) 555-0123 (their words): "Hi, do you have any openings Saturday morning?"</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="scene" data-scene="night" hidden>
+            <div class="tb">
+              <div class="mini-phone">
+                <p class="mp-label">The caller's phone</p>
+                <div class="mp-screen">
+                  <div class="pane pane-call" data-until="6">
+                    <p class="call-who">Bright Cuts Salon</p>
+                    <div class="call-state">
+                      <p class="call-line ringing" data-at="1" data-until="2">Ringing... 10:32 PM</p>
+                      <p class="call-line" data-at="2" data-until="3">No answer</p>
+                      <p class="call-line" data-at="3">Recorded greeting</p>
+                    </div>
+                    <p class="greet" data-at="3">Thanks for calling Bright Cuts Salon. Sorry we missed your call. To get one text from us at this number about your call after 8 AM, press 1 now. Message and data rates may apply. You can reply STOP to opt out or HELP for help. Or stay on the line to leave a message.</p>
+                    <p class="keypress" data-at="4"><span>1</span> The caller presses 1</p>
+                  </div>
+                  <div class="pane pane-thread" data-at="6">
+                    <p class="meta">Wed 8:00 AM</p>
+                    <p class="bubble in">Sorry we missed you, this is Bright Cuts Salon. How can we help? Reply STOP to opt out.</p>
+                    <p class="bubble out" data-at="7">Hi, do you have any openings Saturday morning?</p>
+                    <p class="meta right" data-at="7">Delivered</p>
+                  </div>
+                </div>
+              </div>
+              <div class="owner">
+                <p class="mp-label">The owner's phone</p>
+                <div class="alert" data-at="5"><p class="alert-t">Text message &middot; 10:32 PM</p><p>Bright Cuts Salon: missed call from (757) 555-0123 at 10:32 PM. Voicemail: none. We will text them at 8:00 AM.</p></div>
+                <div class="alert" data-at="8"><p class="alert-t">Text message &middot; 8:03 AM</p><p>Bright Cuts Salon: text from (757) 555-0123 (their words): "Hi, do you have any openings Saturday morning?"</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B: Google listing upkeep -->
+    <div class="demo" id="demo-b" role="tabpanel" aria-labelledby="tab-b" data-demo>
+      <header class="demo-head">
+        <span class="example-tag">Example</span>
+        <h3>Google listing upkeep</h3>
+        <p class="demo-biz">Example: Ridge Auto Care (a made-up business)</p>
+      </header>
+      <div class="demo-body">
+        <div class="demo-side">
+          <p class="demo-cap" role="status" aria-live="polite" data-intro="Press Play to watch a listing get looked after."></p>
+          <div class="demo-controls">
+            <button class="dbtn dbtn-play" type="button">Play</button>
+            <button class="dbtn dbtn-pause" type="button" disabled>Pause</button>
+          </div>
+          <ol class="demo-steps" data-for="main">
+            <li data-ms="3200">Before: this example listing has no holiday hours, an old post, and two reviews nobody has answered.</li>
+            <li data-ms="3000">Holiday hours get filled in, so customers are never unsure if you are open.</li>
+            <li data-ms="3000">A fresh post goes up. You approve posts first.</li>
+            <li data-ms="3200">A polite reply goes up under the good review.</li>
+            <li data-ms="3600">The bad review gets a drafted reply too, but it waits for your OK. Bad reviews wait for your OK.</li>
+            <li data-ms="2400">After: hours right, a recent post, every review handled.</li>
+          </ol>
+        </div>
+        <div class="stage" aria-hidden="true">
+          <div class="scene" data-scene="main">
+            <div class="listing demo-listing">
+              <div class="listing-in">
+                <p class="ba-chip"><span class="ba-b" data-until="2">Before</span><span class="ba-w" data-at="2" data-until="6">Updating...</span><span class="ba-a" data-at="6">After</span></p>
+                <div class="l-head">
+                  <span class="avatar">RA</span>
+                  <div><p class="l-name">Example: Ridge Auto Care</p><p class="l-cat">Local business</p></div>
+                </div>
+                <div class="sw l-hours-sw">
+                  <p class="l-hours warn b" data-until="2">Holiday hours: not set</p>
+                  <p class="l-hours good a" data-at="2">Holiday hours: Thanksgiving closed &middot; Fri 8 AM to 4 PM</p>
+                </div>
+                <div class="l-post">
+                  <div class="sw">
+                    <div class="b" data-until="3"><p class="l-label">Latest post &middot; 4 months ago</p><p>Summer road-trip check-ups.</p></div>
+                    <div class="a" data-at="3"><p class="l-label">Latest post &middot; just now</p><p>Winter tire check: book before the first freeze. Call or message us.</p></div>
+                  </div>
+                </div>
+                <div class="l-review">
+                  <p class="l-who"><span class="avatar sm">A</span><span>Example reviewer A</span><span class="mstars">5 stars</span></p>
+                  <p>"Quick, honest and fair on price." <span class="l-ex">(example review)</span></p>
+                  <div class="sw">
+                    <p class="noreply b" data-until="4">No reply yet</p>
+                    <div class="l-reply a" data-at="4"><p class="l-label">Response from the owner</p><p>Thanks for stopping in! We're glad it was quick and easy.</p></div>
+                  </div>
+                </div>
+                <div class="l-review">
+                  <p class="l-who"><span class="avatar sm">B</span><span>Example reviewer B</span><span class="mstars">2 stars</span></p>
+                  <p>"Waited longer than I was told." <span class="l-ex">(example review)</span></p>
+                  <div class="sw">
+                    <p class="noreply b" data-until="5">No reply yet</p>
+                    <div class="l-reply draft a" data-at="5"><p class="l-label">Draft reply: waiting for your OK</p><p>We're sorry about the wait and would like to make it right. Please call us.</p><p class="okline">Bad reviews wait for your OK before anything is posted.</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C: monthly report -->
+    <div class="demo" id="demo-c" role="tabpanel" aria-labelledby="tab-c" data-demo>
+      <header class="demo-head">
+        <span class="example-tag">Example</span>
+        <h3>The one-page monthly report</h3>
+        <p class="demo-biz">Example: Harbor Home Services (a made-up business)</p>
+      </header>
+      <div class="demo-body">
+        <div class="demo-side">
+          <p class="demo-cap" role="status" aria-live="polite" data-intro="Press Play to watch a report fill in."></p>
+          <div class="demo-controls">
+            <button class="dbtn dbtn-play" type="button">Play</button>
+            <button class="dbtn dbtn-pause" type="button" disabled>Pause</button>
+          </div>
+          <ol class="demo-steps" data-for="main">
+            <li data-ms="2600">Each month you get one page, in plain words. This is an example for a made-up business.</li>
+            <li data-ms="2800">Missed calls: how many came in while nobody could answer.</li>
+            <li data-ms="3000">Texts sent to callers who asked for one, and how many replied.</li>
+            <li data-ms="3200">Google posts done and reviews answered, including the reply that waited for the owner's OK.</li>
+            <li data-ms="3600">And what I would fix next month.</li>
+          </ol>
+        </div>
+        <div class="stage" aria-hidden="true">
+          <div class="scene" data-scene="main">
+            <div class="paper">
+              <p class="paper-tag">Example numbers, not a real client</p>
+              <p class="paper-title">Example: Harbor Home Services</p>
+              <p class="paper-sub">Monthly report &middot; October</p>
+              <div class="mgrid">
+                <div class="m"><p class="m-l">Missed calls</p><div class="sw"><p class="m-n b" data-until="2">-</p><p class="m-n a" data-at="2">18</p></div></div>
+                <div class="m"><p class="m-l">Texts sent</p><div class="sw"><p class="m-n b" data-until="3">-</p><p class="m-n a" data-at="3">11</p></div></div>
+                <div class="m"><p class="m-l">Customers who replied</p><div class="sw"><p class="m-n b" data-until="3">-</p><p class="m-n a" data-at="3">6</p></div></div>
+                <div class="m"><p class="m-l">Google posts done</p><div class="sw"><p class="m-n b" data-until="4">-</p><p class="m-n a" data-at="4">4</p></div></div>
+                <div class="m"><p class="m-l">Reviews answered</p><div class="sw"><p class="m-n b" data-until="4">-</p><p class="m-n a" data-at="4">5</p></div></div>
+              </div>
+              <div class="fix">
+                <p class="m-l">What I'd fix next month</p>
+                <div class="sw">
+                  <p class="b" data-until="5">...</p>
+                  <ul class="a" data-at="5"><li>Add your Saturday hours to Google. Two callers asked for them.</li><li>Add 3 photos of recent jobs to the listing.</li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -311,7 +545,7 @@
   <div class="wrap who-grid">
     <div>
       <h2>Who it's for</h2>
-      <p class="section-lead">Owner-run local service businesses: HVAC, plumbing, roofing, electrical, landscaping, cleaning, auto repair and more, wherever you are in the US.</p>
+      <p class="section-lead">Owner-run local businesses - trades, home services, shops, salons and more - anywhere in the US.</p>
       <p>If you're often on a job when the phone rings, and you'd rather spend your evenings on something other than your Google listing, this is built for you.</p>
       <div class="person">
         <h3>Who you'll work with</h3>
