@@ -487,7 +487,6 @@ section[id] { scroll-margin-top: 80px; }
 }
 @media (max-width: 380px) {
   .hero h1 { font-size: 1.85rem; }
-  .hero .half-line { display: none; }
   .half { padding: var(--s3) var(--s2); }
 }
 
@@ -651,3 +650,20 @@ html:not(.js) .demo [data-until] { display: none; }
 .hero-mocks .phone-msgs { font-size: 1rem; }
 .hero-mocks .contact, .hero-mocks .meta { font-size: .95rem; }
 .nav a { padding: 10px 8px; min-width: 44px; text-align: center; }
+
+@media (max-width: 559px) {
+  .mp-screen { min-height: 200px; padding: var(--s3); }
+  .pane { gap: var(--s2); }
+  .alert { min-height: 0; padding: 8px 10px; }
+  .tb { gap: var(--s3); }
+  .demo-cap { min-height: 3.6em; }
+  .pane { font-size: .875rem; }
+  .js .demo:not(.reduced) .pane.gone { display: none; }
+  .mp-screen { min-height: 0; }
+}
+@media (max-width: 340px) {
+  .mp-screen { padding: var(--s2); }
+  .alert { padding: 6px 8px; }
+  .tb { gap: var(--s2); }
+  .mp-label { margin-bottom: var(--s1) !important; }
+}
