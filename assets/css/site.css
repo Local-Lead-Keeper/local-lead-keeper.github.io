@@ -559,6 +559,8 @@ html:not(.js) .demo [data-until] { display: none; }
 .dbtn:disabled { opacity: .45; cursor: default; }
 .demo-steps { margin: 0; padding-left: 1.3em; font-size: 1rem; line-height: 1.5; }
 .demo-steps li + li { margin-top: var(--s2); }
+.demo-more { margin: var(--s3) 0 0; }
+.demo-more-link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
 .js .demo:not(.reduced) .demo-steps { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; margin: 0; padding: 0; }
 .js .demo.reduced .demo-controls, .js .demo.reduced .demo-cap { display: none; }
 
